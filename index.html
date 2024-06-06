@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zain Buksh - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: url('wallpaper.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 4em 0 2em 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 1em;
+            background-color: white;
+        }
+
+        header::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        header .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1em 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 1em;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2em 0;
+        }
+
+        .content {
+            background-color: white;
+            margin-bottom: 2em;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #4CAF50;
+            margin-bottom: 0.5em;
+        }
+
+        h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.5em;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        ul li {
+            list-style: none;
+            margin: 0.5em 0;
+        }
+
+        .job, .project, .education {
+            margin-bottom: 2em;
+        }
+
+        .education-item {
+            margin-bottom: 1.5em;
+        }
+
+        .education-item h3 {
+            margin-bottom: 0.5em;
+        }
+
+        .education-item p {
+            margin: 0.5em 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="myImage.jpg" alt="Zain Buksh">
+        <div class="container">
+            <h1>Zain Buksh</h1>
+            <p>Project Manager | IT Professional | Researcher</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" class="content">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Zain Buksh is a Project Manager at the University of Fiji with extensive experience in the IT industry. He holds qualifications in Information Technology and is pursuing further studies in the field. He has expertise in IT project management, technical support, and troubleshooting, with a keen interest in emerging technologies like Hyperledger, Machine Learning, AI, and Cybersecurity.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="content">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Project Manager</h3>
+                <p><strong>The University of Fiji, Department of Computer Science and Mathematics</strong></p>
+                <p>April 2023 – Present</p>
+                <ul>
+                    <li>Supervised Research and Event Activities</li>
+                    <li>Project Reports and Documentation</li>
+                    <li>Budget Management</li>
+                    <li>Stakeholder Meetings</li>
+                    <li>Blockchain and AI Research</li>
+                    <li>Technology Implementation and Security</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Information Technology Officer</h3>
+                <p><strong>Tappoo Group of Companies, IT Department</strong></p>
+                <p>Dec 2021 – April 2023</p>
+                <ul>
+                    <li>Technical Support</li>
+                    <li>IT Infrastructure Management</li>
+                    <li>System Security</li>
+                    <li>System Performance Monitoring</li>
+                    <li>Procurement Assistance</li>
+                    <li>User Training</li>
+                    <li>IT Policies Development</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>IT Support Technician</h3>
+                <p><strong>Smart Tech PTE LTD</strong></p>
+                <p>Nov 2020 – Dec 2021</p>
+                <ul>
+                    <li>Technical Support</li>
+                    <li>System Installation and Configuration</li>
+                    <li>System Maintenance</li>
+                    <li>Troubleshooting</li>
+                    <li>Hardware Repair and Configuration</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="content">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>University Blockchain Research Initiative</h3>
+                <p>Explored Blockchain applications in secure data management and fraud prevention. Led research, developed prototypes, and published findings.</p>
+            </div>
+            <div class="project">
+                <h3>IT Infrastructure Overhaul at Tappoo Group</h3>
+                <p>Upgraded and secured IT infrastructure. Planned and executed system upgrades, provided training, and improved system performance and security.</p>
+            </div>
+            <div class="project">
+                <h3>Infant Health Monitoring System</h3>
+                <p>Developed a web-based health monitoring application. Conducted research, designed architecture, developed the application, and conducted testing.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="content">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3><strong>Master of Information Technology</strong></h3>
+                <p><strong>The University of Fiji, School of Science and Technology</strong></p>
+            </div>
+            <div class="education-item">
+                <h3><strong>Postgraduate Diploma in Information Technology</strong></h3>
+                <p><strong>The University of Fiji, School of Science and Technology</strong></p>
+            </div>
+            <div class="education-item">
+                <h3><strong>Bachelor of Information Technology</strong></h3>
+                <p><strong>The University of Fiji, School of Science and Technology</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="content">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Project Management: Scrum, Agile, PMBOK</li>
+                <li>Research: Blockchain, Hyperledger Fabric, AI</li>
+                <li>Programming Languages: Python, Java, JavaScript, C#, C++</li>
+                <li>Web Development: HTML/CSS, JavaScript, React, Angular, WordPress</li>
+                <li>Database Management: SQL, MongoDB, PostgreSQL</li>
+                <li>Cloud Infrastructure: AWS, Azure, Google Cloud Platform</li>
+                <li>Deployment: Docker, Kubernetes, Apache, Nginx</li>
+                <li>System and Network Administration: Server, Domain, Firewall, Backup Solutions</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="content">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:zain.buksh@yahoo.com">zain.buksh@yahoo.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/zain-buksh-a116b01b1" target="_blank">linkedin.com/in/zain-buksh-a116b01b1</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Zain Buksh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("Portfolio site is loaded and ready.");
+        });
+    </script>
+</body>
+</html>
