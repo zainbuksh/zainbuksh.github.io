@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zain Buksh - Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -29,6 +30,7 @@
             border: 5px solid white;
             margin-bottom: 1em;
             background-color: white;
+            filter: brightness(1.2);
         }
 
         header::after {
@@ -79,7 +81,7 @@
         }
 
         .container {
-            width: 80%;
+            max-width: 900px;
             margin: 0 auto;
             padding: 2em 0;
         }
@@ -286,9 +288,21 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log("Portfolio site is loaded and ready.");
+        $(document).ready(function(){
+            $("nav ul li a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                        window.location.hash = hash;
+                    });
+                }
+            });
         });
     </script>
 </body>
